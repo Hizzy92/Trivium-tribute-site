@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face { /* tak się importuje fonty   */
+    font-family: "Booter - Zero Zero";
+    src: url("fonts/Booter\ -\ Zero\ Zero.woff") format("woff"), 
+        url("fonts/FontsFree-Net-BOOTERZZ.ttf")format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box; /* na size boxa bedzie się składał padding + widith a padding bedzie w srodku przyda sie do stylowania sklepu   */
+    font-family: Raleway;
+    color: rgb(12, 11, 11);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;   
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+.nav ul{ /* elementy ul w klasie nav*/
+    margin: 0;
+}
+.nav li { /* elementy li w klasie nav*/
+    display: inline; /* elementy inline niemaja paddingu z góry i dołu */
+}
+.nav a {  /* elementy a w klasie nav*/
+    display: inline-block; /* mozna dodac padding i height  */
+    padding: .5em; /* em zalerzy od font size 1 em to font size 2 to 2x 1.1 to 10% wieksze */
+    color: white;
+    text-decoration: none;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.main-nav li {
+    padding: 0 5%; /* 0 -top i bottom 5% lewa prawa */
+}
+.nav a:hover { /* elementy <a> w klasie nav   */
+    background-color: rgba(255,255,255, .3)
+}
+
+.main-header { 
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name { /* */
+    text-align: center;
+    margin: 0;
+    font-size: 6em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal; /* h1 pogrubia standardow owiec trzeba sie pozbyc   */
+    color: red;
+}
+.band-name-large{
+    font-size: 9em;
+}
+.content-section {
+    padding: 1em;
+}
+.container {
+    background-color: rgba(171, 169, 169, 0.867);
+    max-width: 900px;
+    margin: 0px auto;
+    padding-bottom: 1.5em;
+    
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: black; /*aby został czarny nawet jak kiedys  zmienie gdzie indziej kolor  */
+    text-align: center;
+    font-size: 2.5em;
+}
+.about-band-image {
+    float:left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.main-footer {
+    background-color: black;
+    color: white;
+    padding: .25em 0;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1.5em;
+};
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-nav li {
+    padding: 0 .5em;
+}
+.footer-nav img {
+    width: 30px;
+    height: 30px; 
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: black;
+    border: 2px solid red;
+    background-color: rgba(255,255,255, .6);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.btn-header:hover {
+    background-color: rgba(255,255,255, 1);
+}
+.header-btn-container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: rgba(255, 0, 0, 0.55);
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0; /*padding usuwmay aby było to perfect circle  */
+    width: 100px;
+    height: 100px;   
+}
+.albumLink{
+    text-decoration: none;
+}
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child { /* tak mozna złaac ostatnie diecko w kalsie  */
+    border-bottom: none;
+}
+.tour-item{
+    display: inline-block; /* zachowwuje się jak inline ale ma atrybuty height i width */
+    padding-right: .5em;    
+}
+.tour-date{ 
+    color:rgb(0, 0, 0);
+    font-weight: bold;  
+    width: 11%; 
+}
+.tour-city {
+    width: 24%;
+}
+.tour-arena{
+    width: 42%;
+}
+.tour-btn{
+    max-width: 19%;
+}
+.btn-primary{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: rgb(74, 62, 62);
+    
+}
+.shop-item{
+    margin: 30px;
+}
+.shop-item-title{
+    display:block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+.shop-item-image{
+    height: 300px;
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price{
+    flex-grow: 1; /*wypcha nasz add to cart w prawo */
+    color: rgb(14, 14, 14);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-column{
+    display: flex;
+    align-items: center; /* ta i linia wyzej sprawia ze itemy w kolumnie sa w lini i wyrównane */
+    border-bottom: 1ppx solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+.cart-row {
+    display: flex;
+    
+}
+.cart-item{
+    width: 45%;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-item-title{
+    color: #333;
+    margin-left: 5em;
+    font-size: 1.2em;
+}
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger{
+    color: wheat;
+    background-color: red;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: rgb(135, 16, 16);
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(9, 162, 245);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color:rgb(0, 0, 0);
+    margin-right: 20px;
+}
+.cart-total-price{
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.7em;
+}
