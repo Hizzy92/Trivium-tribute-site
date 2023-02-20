@@ -1,0 +1,44 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "Album 1",
+            "price": 1599,
+            "imgName": "courtOfDragon.png"
+        },
+        {
+            "id": 2,
+            "name": "Album 2",
+            "price": 1599,
+            "imgName": "SilentInTheSnow.png"
+        },
+        {
+            "id": 3,
+            "name": "Album 3",
+            "price": 1599,
+            "imgName": "WhatTheDeadManSay.png"
+        },
+        {
+            "id": 4,
+            "name": "Album 4",
+            "price": 1599,
+            "imgName": "SinAndSentence.png"
+        }
+
+    ],
+
+    "merch": [
+        {
+            "id": 5,
+            "name": "T-SHIRT",
+            "price": 3099,
+            "imgName": "tShirt1.png"
+        },
+        {
+            "id": 6,
+            "name": "T-SHIRT2",
+            "price": 3099,
+            "imgName": "tShirt2.png"
+        }
+    ]
+}
