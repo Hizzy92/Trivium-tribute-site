@@ -9,5 +9,5 @@ vanilla HTML, CSS, JS simple online shop
 
  The site is built using front-end technologies such as HTML, CSS, and JavaScript to create a visually appealing and interactive user interface. NodeJS is utilized for back-end functionalities, including server-side scripting and API integrations.
 
- Moreover, the site includes a payment system powered by Stripe, allowing fans to purchase merchandise and concert tickets directly from the site. This feature is implemented using Stripe's payment API, ensuring secure and seamless payment transactions.
->>>>>>> Stashed changes
+ Moreover, the site includes a test payment system powered by Stripe, allowing  purchase merchandise  directly from the site. This feature is implemented using Stripe's payment API, ensuring secure and seamless payment transactions. 
+
