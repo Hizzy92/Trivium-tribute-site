@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 
 // if sprawdzający czy zawartość HTML strony już się załadowała 
 if(document.readyState== 'loading'){
@@ -126,7 +126,7 @@ function updateCartTotal(){
     total = Math.round(total * 100) / 100  //zaokrąglamy 
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;    
 }
-=======
+
 
 // if sprawdzający czy zawartość HTML strony już się załadowała 
 if(document.readyState== 'loading'){
@@ -254,4 +254,4 @@ function updateCartTotal(){
     total = Math.round(total * 100) / 100  //zaokrąglamy 
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;    
 }
->>>>>>> Stashed changes
+
